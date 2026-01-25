@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fffaf3;
+}
+
+header {
+    background: #d35400;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 40px;
+    text-align: center;
+    background: #f6e58d;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.menu {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-item {
+    background: white;
+    margin: 15px auto;
+    padding: 15px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.contact {
+    padding: 20px;
+    text-align: center;
+}
+
+input, textarea, button {
+    width: 80%;
+    margin: 8px;
+    padding: 10px;
+}
+
+button {
+    background: #d35400;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
