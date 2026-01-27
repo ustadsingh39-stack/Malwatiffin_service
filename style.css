@@ -423,3 +423,16 @@ body {
         font-size: 1.8rem;
     }
 }
+/* INSTAGRAM LINK STYLE */
+.insta-link {
+    text-decoration: none;
+    font-weight: 600;
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease;
+}
+
+.insta-link:hover {
+    transform: scale(1.08);
+}
