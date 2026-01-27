@@ -439,3 +439,128 @@ body {
 .insta-link:hover {
     text-shadow: 0 4px 12px rgba(221,42,123,0.6);
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.header nav {
+    margin-top: 0.5rem;
+}
+
+.header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header nav a.active {
+    border-bottom: 2px solid #fff;
+}
+
+/* Hero */
+.hero {
+    padding: 2.5rem 1rem;
+    text-align: center;
+    background: #e8f5e9;
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #2e7d32;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Features */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.feature-card {
+    background: white;
+    padding: 1.2rem;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.feature-card h3 {
+    margin: 0.5rem 0;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2e7d32;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Desktop polish */
+@media (min-width: 768px) {
+    .hero h2 {
+        font-size: 2.3rem;
+    }
+}
