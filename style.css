@@ -11,22 +11,19 @@ body {
     line-height: 1.6;
 }
 
+/* GLOBAL CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* HEADER */
 .header {
     background: linear-gradient(135deg, #ff914d, #ff5e62);
     color: white;
     text-align: center;
     padding: 26px 16px;
-}
-
-.header h1 {
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.header p {
-    opacity: 0.95;
-    margin-top: 4px;
 }
 
 .header nav {
@@ -38,7 +35,6 @@ body {
     margin: 0 14px;
     text-decoration: none;
     font-weight: 500;
-    padding-bottom: 4px;
 }
 
 .header nav a.active {
@@ -48,74 +44,158 @@ body {
 /* HERO */
 .hero {
     background: #fff3e6;
-    padding: 48px 20px;
+    padding: 70px 20px;
     text-align: center;
 }
 
 .hero h2 {
-    font-size: 2.4rem;
-    margin-bottom: 8px;
+    font-size: clamp(2.2rem, 4vw, 3rem);
 }
 
 .hero p {
-    font-size: 1.05rem;
+    max-width: 640px;
+    margin: 10px auto 0;
     opacity: 0.85;
 }
 
-/* CONTACT SECTION */
+/* CTA */
+.cta-btn {
+    display: inline-block;
+    margin-top: 22px;
+    background: #ff5e62;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* FEATURES (HOME) */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.feature-card {
+    background: white;
+    padding: 28px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+}
+
+/* GALLERY (HOME) */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    padding: 0 20px 60px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+/* MENU PAGE */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.day {
+    background: white;
+    padding: 24px;
+    border-radius: 20px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+}
+
+.day h3 {
+    color: #ff5e62;
+    margin-bottom: 10px;
+}
+
+.day ul {
+    list-style: none;
+}
+
+.day li {
+    padding: 6px 0;
+}
+
+/* EXTRAS */
+.extras {
+    background: #fff3e6;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.extras-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.extras-grid span {
+    background: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* CONTACT PAGE */
 .contact-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 22px;
-    padding: 40px 20px;
-    max-width: 1100px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    padding: 60px 20px;
+    max-width: 1200px;
     margin: auto;
 }
 
 .contact-card {
     background: white;
     border-radius: 20px;
-    padding: 28px 22px;
+    padding: 28px;
     text-align: center;
     box-shadow: 0 10px 28px rgba(0,0,0,0.08);
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
-
-.contact-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 18px 40px rgba(0,0,0,0.14);
 }
 
 .contact-card span {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
 }
 
 .contact-card h4 {
-    margin: 14px 0 6px;
-    font-size: 1.1rem;
+    margin: 12px 0 6px;
     color: #ff5e62;
 }
 
-.contact-card p,
 .contact-card a {
-    font-size: 0.95rem;
-    color: #374151;
-}
-
-.contact-card a {
+    color: #e1306c;
     text-decoration: none;
     font-weight: 600;
-    color: #e1306c;
 }
 
 /* FLOATING BUTTONS */
 .whatsapp-btn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 22px;
+    right: 22px;
     background: #25D366;
     color: white;
-    padding: 15px 22px;
+    padding: 14px 20px;
     border-radius: 999px;
     text-decoration: none;
     font-weight: 700;
@@ -124,8 +204,8 @@ body {
 
 .instagram-btn {
     position: fixed;
-    bottom: 88px;
-    right: 24px;
+    bottom: 90px;
+    right: 26px;
     background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
     width: 54px;
     height: 54px;
@@ -136,7 +216,6 @@ body {
     color: white;
     font-size: 24px;
     text-decoration: none;
-    box-shadow: 0 12px 28px rgba(0,0,0,0.25);
 }
 
 /* FOOTER */
@@ -145,47 +224,5 @@ footer {
     color: #f9fafb;
     text-align: center;
     padding: 18px;
-    margin-top: 50px;
-    font-size: 0.9rem;
-}
-/* DESKTOP FIX */
-@media (min-width: 1024px) {
-
-    .hero {
-        padding: 70px 20px;
-    }
-
-    .hero h2 {
-        font-size: 3rem;
-    }
-
-    .hero p {
-        font-size: 1.15rem;
-    }
-
-    .contact-section {
-        grid-template-columns: repeat(4, 1fr);
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 60px 20px;
-    }
-
-    .contact-card {
-        padding: 35px 25px;
-    }
-
-    footer {
-        margin-top: 80px;
-    }
-
-    /* Floating buttons spacing */
-    .whatsapp-btn {
-        bottom: 30px;
-        right: 30px;
-    }
-
-    .instagram-btn {
-        bottom: 100px;
-        right: 34px;
-    }
+    margin-top: 60px;
 }
