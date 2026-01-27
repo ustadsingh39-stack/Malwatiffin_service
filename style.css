@@ -93,3 +93,155 @@ footer {
 .whatsapp-btn:hover {
     background: #1ebc59;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #ff7a18, #ffb347);
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+nav a:hover,
+nav a.active {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* WEEKLY MENU */
+.weekly-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.day {
+    background: white;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.day:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.day h3 {
+    text-align: center;
+    color: #ff7a18;
+    margin-bottom: 10px;
+}
+
+.day ul {
+    list-style: none;
+}
+
+.day li {
+    padding: 6px 0;
+    border-bottom: 1px dashed #ddd;
+    text-align: center;
+}
+
+.day li:last-child {
+    border-bottom: none;
+}
+
+/* EXTRAS */
+.extras {
+    background: white;
+    margin: 0 20px 40px;
+    padding: 30px;
+    border-radius: 14px;
+    max-width: 900px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.extras h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ff7a18;
+}
+
+.extras ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    list-style: none;
+    gap: 10px;
+    text-align: center;
+}
+
+.extras li {
+    background: #fff3e6;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 14px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.08);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: #fff;
+    font-size: 0.9rem;
+}
