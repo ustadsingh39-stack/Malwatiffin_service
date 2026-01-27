@@ -320,3 +320,6 @@ footer {
         right: 15px;
     }
 }
+body {
+    overflow-x: hidden;
+}
