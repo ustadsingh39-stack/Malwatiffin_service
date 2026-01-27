@@ -271,3 +271,52 @@ footer {
     color: #ff7a18;
     text-shadow: 0 2px 8px rgba(255,122,24,0.3);
 }
+/* 📱 Mobile Responsive Fix */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    .price {
+        font-size: 1.1rem;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px 8px;
+        font-size: 0.95rem;
+    }
+
+    .weekly-menu {
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .day {
+        padding: 16px;
+    }
+
+    .day h3 {
+        font-size: 1.1rem;
+    }
+
+    .day li {
+        font-size: 0.95rem;
+    }
+
+    .extras {
+        padding: 20px;
+    }
+
+    .extras li {
+        font-size: 0.9rem;
+    }
+
+    .whatsapp-btn {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+        bottom: 15px;
+        right: 15px;
+    }
+}
