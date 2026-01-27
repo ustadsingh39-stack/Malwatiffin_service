@@ -266,3 +266,8 @@ footer {
 .extras li:hover {
     animation: emojiBounce 0.6s ease;
 }
+.day li:hover,
+.extras li:hover {
+    color: #ff7a18;
+    text-shadow: 0 2px 8px rgba(255,122,24,0.3);
+}
