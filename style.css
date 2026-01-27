@@ -245,3 +245,24 @@ footer {
     color: #fff;
     font-size: 0.9rem;
 }
+/* Emoji bounce animation */
+@keyframes emojiBounce {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-6px); }
+    50%  { transform: translateY(0); }
+    70%  { transform: translateY(-3px); }
+    100% { transform: translateY(0); }
+}
+
+/* Target emoji inside list items */
+.day li,
+.extras li {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Animate emoji on hover */
+.day li:hover,
+.extras li:hover {
+    animation: emojiBounce 0.6s ease;
+}
