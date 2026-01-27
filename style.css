@@ -436,3 +436,6 @@ body {
 .insta-link:hover {
     transform: scale(1.08);
 }
+.insta-link:hover {
+    text-shadow: 0 4px 12px rgba(221,42,123,0.6);
+}
