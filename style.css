@@ -226,3 +226,14 @@ footer {
     padding: 18px;
     margin-top: 60px;
 }
+.whatsapp-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.whatsapp-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(0,0,0,0.12);
+    transition: 0.3s ease;
+}
